@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chon Hang Wong Vivaldo">
+    <title>Chon Hang Wong Vivaldo</title>
+</head>
+
+<body style="background-color: grey">
+    <h1> <a id="1">
+            <center> Apuntes lenguaje de marcas</center>
+        </a></h1>
+
+
+    <table border="10" align="top" width="100%">
+
+        <tr>
+            <th>
+                <h3>INDICE DE CONTENIDOS</h3>
+            </th>
+            <td colspan="10" rowspan="4" valign="top" width="80%">
+                <h2> Inserción de imagenes </h2>
+
+                <ul>
+                    <li>La etiqueta &lt;a&gt; se utiliza para crear enlaces (links) a otras páginas web, documentos, secciones dentro de la misma página o cualquier otro recurso.</li>
+                    <li>El elemento escencial para los enlaces es el atributo <b>href</b> que define la URL a la cual redirige al usuario.</li>
+                    <li>El texto entre la etiqueta de apertura y la de cierre es lo que los usuarios verán y podrán hacer click para ser rederigidos.</li>
+                </ul><br>
+
+                <b>Atributos de los enlaces:</b>
+                <ol>
+                    <li>href (hypertext reference):
+                            <ul>
+                                <li>Define la URL de destino del enlace</li>
+                                <li>Puede ser un camino absoluto (una URL completa) o relativo (camino dentro del mismo dominio).</li>
+                            </ul>
+                    </li>
+                    <li>target:
+                            <ul>
+                                <li>Define donde se abrirá el enlace: en la misma pestaña, una nueva pestanya o una nueva ventana.</li>
+                                <li>Los valores más habituales son:</li>
+                                    <ul>
+                                        <li>_blank: Abre el enlace en una pestaña nueva.</li>
+                                        <li>_self: Anre el enlace en la misma pestaña (valor predeterminada).</li>
+                                    </ul>
+                            </ul>
+                    </li>
+                </ol>
+
+                <center><b>Ejemplo de estructura:</b></center><br>
+                <!-- Cambiar el center una vez aprendamos CSS-->
+                <center>
+                    <table>
+                        <tr>
+                            <td> Ejemplo enlaces:</td>
+                            <td> Resultado:</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="/LMG_APUNTS/img/code13.jpg" width="700" alt="Ejemplo de enlace"></td>
+                            <td> <img src="/LMG_APUNTS/img/resultado10.png" width="330" alt="Resultado de ejemplo"></td>
+                        </tr>
+                    </table>
+                </center><br><br>
+
+                <div class="buenas_practicas">
+                     <center><strong><u>Buenas prácticas</u></strong></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+                    <center>
+                        <table border="20">
+                            <tr>
+                                <td> <ul>
+                                        <li>Utilizar enlaces descriptivos en lugar de genéricos como "Click aquí", esto mejora la accesibilidad y el SEO.</li>
+                                            <ul>
+                                                <li><b>Correcto:</b> "Visita la página de <b>Contacto</b>".</li>
+                                                <li><b>Incorrecto:</b> "Click aquí".</li>
+                                            </ul>
+                                        <li>Utiliza target="_blank" únicamente cuando sea realmente necesario, ya que abrir enlaces en nuevas pestañas puede confundir a algunos usuarios.</li>
+                                        <li>Siempre asegurarse que los enlaces estén accesibles añadiendo una descipción adequada para los usuarios con lectores de pantallas.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                
+                        </table>
+                    </center><br>
+                </div>
+
+            </td>
+        </tr>
+        <div class="indice">
+            <nav>
+                <tr>
+                    <td>
+                        <a href="/LMG_APUNTS/index.html">INICIO</a>
+                    </td>
+                </tr>
+                <tr colspan="2" align="left">
+                    <td>
+                        <a href="/LMG_APUNTS/UT1/UT1.html">UT1 HTML BÁSICO</a><br>
+                        <ol type="1">
+                            <li> <a href="/LMG_APUNTS/UT1/UT1.html">Introducción a HTML</a> </li>
+                            <li> <a href="/LMG_APUNTS/UT1/Estructura.html"> Estructura básica de un documento HTML</a> </li>
+                            <li> <a href="/LMG_APUNTS/UT1/Etiquetas.html">Etiquetas básicas</a></li>
+                            <li> <a href="/LMG_APUNTS/UT1/Elementos.html">Elementos HTML y Anidamientos</a> </li>
+                            <li> <a href="/LMG_APUNTS/UT1/Atributos.html">Atributos HTML</a> </li>
+                            <li> <a href="/LMG_APUNTS/UT1/Formato.html">Formato de textos</a></li>
+                            <li> <a href="/LMG_APUNTS/UT1/Comentarios.html">Comentarios en HTML</a></li>
+                            <li> <a href="/LMG_APUNTS/UT1/Imagenes.html">Inserción de imagenes</a></li>
+                            <li> <a href="#1">Enlaces</a></li>
+                            <li> <a href="/LMG_APUNTS/UT1/Listas.html">Listas</a></li>
+                            <li> <a href="">Tablas</a></li>
+                        </ol>
+                    </td>
+                </tr>
+            </nav>
+            <nav>
+                <tr align="left">
+                    <td>
+                        <a href="/LMG_APUNTS/UT2/UT2.html">UT2 HTML AVANZADO</a><br>
+                        <ol type="1">
+                            <li> <a href=""></a>HTML5 y su evolución </li>
+                            <li> <a href=""></a>Estructura básica de un documento HTML </li>
+                            <li> <a href=""></a>Formularios con HTML </li>
+                            <li> <a href=""></a>Validación de formularios </li>
+                            <li> <a href=""></a>Tipos de entrada especiales </li>
+                            <li> <a href=""></a>Mulitmedia con HTML </li>
+                            <li> <a href=""></a>Etiquetas </li>
+                            <li> <a href=""></a>Metadatos en HTML </li>
+                        </ol>
+                    </td>
+                </tr>
+            </nav>
+        </div>
+    </table>
+</body>
+
+</html>
