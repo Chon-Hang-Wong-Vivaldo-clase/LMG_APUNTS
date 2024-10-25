@@ -17,60 +17,50 @@
                 <h3>INDICE DE CONTENIDOS</h3>
             </th>
             <tbody>
-                <div>
+                <div class="contenidos">
                     <td colspan="10" rowspan="4" valign="top" width="80%">
-                        <h2> Listas en HTML </h2>
-                        <b>Listas no ordenadas (&lt;ul&gt;):</b><br>
-                        <ol>
-                            <li>Se utilizan para listas de elementos sin un orden específico.</li>
-                            <li>Los elementos se muestran con viñetas u otros símbolos antes de cada ítem.</li>
-                            <li>Cada elemento de la lista se define con la etiqueta &lt;li&gt; (list item)</li>
-                        </ol><br><br>
-                        <b>Listas ordenadas (&lt;ol&gt;):</b><br>
+                        <h2> Tablas básicas con HTML </h2>
+                        <b>Etiqueta &lt;table&gt;:</b><br>
                         <ul>
-                            <li>Se utilizan para listas en que el orden de los elementos son relevantes.</li>
-                            <li>Los elementos se ennumeran automáticamente (1,2,3,etc.).</li>
-                            <li>Cada elemento de la lista se define con la etiqueta &lt;li&gt; (list item)</li>
+                            <li>La etiqueta &lt;table&gt; define la tabla y actua como contenedor principal.</li>
                         </ul>
+
+                        <b>Etiqueta &lt;tr&gt; (table row):</b><br>
+                        <ul>
+                            <li>Define una fila dentro de la tabla.</li>
+                        </ul>
+
+                        <b>Etiqueta &lt;td&gt; (table data):</b><br>
+                        <ul>
+                            <li>Crea una celda dentro de una fila de la tabla (información de la tabla).</li>
+                        </ul><br>
                         <center><b>Ejemplos:</b></center><br>
                         <!-- Cambiar el center una vez aprendamos CSS-->
                         <center>
                             <table>
                                 <tr>
-                                    <td> Ejemplo lista no ordenada:</td>
+                                    <td> Ejemplo tabla básica:</td>
                                     <td> Resultado:</td>
                                 </tr>
                                 <tr>
-                                    <td> <img src="/LMG_APUNTS/img/code10.jpg" width="320" alt="Ejemplo"></td>
-                                    <td> <img src="/LMG_APUNTS/img/resultado7.png" width="235" alt="Resultado"></td>
-                                </tr>
-                                <tr></tr>
-                                <tr>
-                                    <td>Ejemplo lista ordenada:</td>
-                                    <td>Resultado:</td>
-                                </tr>
-                                <tr>
-                                    <td> <img src="/LMG_APUNTS/img/code11.jpg" width="320" alt="Ejemplo"></td>
-                                    <td> <img src="/LMG_APUNTS/img/resultado8.png" width="200" alt="Resultado"></td>
+                                    <td> <img src="/LMG_APUNTS/img/code14.jpg" width="140" alt="Ejemplo"></td>
+                                    <td> <img src="/LMG_APUNTS/img/resultado11.png" width="235" alt="Resultado"></td>
                                 </tr>
                             </table>
                         </center><br>
-                        <b>Atributos de listas</b><br>
+                        <b>Atributos de las tablas:</b><br>
                         <ol>
-                            <li>Atributo type (para listas ordenadas &lt;ol&gt;):</li>
+                            <li>Atributo <b>border</b>:</li>
                             <ul>
-                                <li>Se puede utilizar para definir el tipo de ennumeración de la lista:</li>
-                                <ul>
-                                    <li>1: Numeros (predeterminado)</li>
-                                    <li>A: Mayúsculas.</li>
-                                    <li>a: Minúsculas.</li>
-                                    <li>I: Números romanos en mayúsculas.</li>
-                                    <li>i: Números romanos en minúsculas.</li>
-                                </ul>
+                                <li>Añade un borde en los bordes de la tabla y celdas.</li>
                             </ul>
-                            <li>Atributo start (para listas ordenadas &lt;ol&gt;):</li>
+                            <li>Atributo <b>cellpadding</b>:</li>
                             <ul>
-                                <li>Define el número o letra por el cual queremos comenzar la ennumeración.</li>
+                                <li>Define el espacio entre el contenido de la celda y el borde de la celda.</li>
+                            </ul>
+                            <li>Atributo <b>cellspacing</b>:</li>
+                            <ul>
+                                <li>Controla el espacio entre las celdas de la tabla.</li>
                             </ul>
                         </ol>
                         <center><b>Ejemplo de estructura:</b></center><br>
@@ -78,15 +68,45 @@
                         <center>
                             <table>
                                 <tr>
-                                    <td> Ejemplo estructura:</td>
+                                    <td> Ejemplo atributos de una tabla:</td>
                                     <td> Resultado:</td>
                                 </tr>
                                 <tr>
-                                    <td> <img src="/LMG_APUNTS/img/code12.jpg" width="350" alt="Ejemplo"></td>
-                                    <td> <img src="/LMG_APUNTS/img/resultado9.png" width="250" alt="Resultado"></td>
+                                    <td> <img src="/LMG_APUNTS/img/code15.jpg" width="340" alt="Ejemplo"></td>
+                                    <td> <img src="/LMG_APUNTS/img/resultado12.png" width="250" alt="Resultado"></td>
                                 </tr>
                             </table>
                         </center><br>
+                        <b>Etiqueta &lt;thead&gt; (table head):</b><br>
+                        <ul>
+                            <li>Define el encabezado de la tabla, agrupando de esta manera las filas de encabezado
+                                (habitualmente las que contienen th).</li>
+                        </ul>
+
+                        <b>Etiqueta &lt;tbody&gt; (table body):</b><br>
+                        <ul>
+                            <li>Agrupa el cuerpo de la tabla, es decir, las filas de los datos. Se suele utilizar para
+                                separar los datos de los encabezados.</li>
+                        </ul>
+
+                        <b>Etiqueta &lt;th&gt; (table header):</b><br>
+                        <ul>
+                            <li>Se utiliza para crear una celda de encabezado en una tabla. El texto dentro de
+                                &lt;th&gt; aparece por defecto en negrita y centrado.</li>
+                        </ul><br>
+                        <center><b>Ejemplos:</b></center><br>
+                        <!-- Cambiar el center una vez aprendamos CSS-->
+                        <center>
+                            <table>
+                                <tr>
+                                    <td> Ejemplo atributos de una tabla 2:</td>
+                                    <td> Resultado:</td>
+                                </tr>
+                                <tr>
+                                    <td> <img src="/LMG_APUNTS/img/code16.jpg" width="300" alt="Ejemplo"></td>
+                                    <td> <img src="/LMG_APUNTS/img/resultado13.png" width="300" alt="Resultado"></td>
+                                </tr>
+                            </table>
                     </td>
                 </div>
             </tbody>
@@ -104,7 +124,8 @@
                         <ol type="1">
                             <li> <a href="/LMG_APUNTS/UT1/UT1.html">Introducción a HTML</a></li><br>
                             <li> <a href="/LMG_APUNTS/UT1/Estructura.html"> Estructura básica de un documento HTML</a>
-                            </li><br>
+                            </li>
+                            <br>
                             <li> <a href="/LMG_APUNTS/UT1/Etiquetas.html">Etiquetas básicas</a></li><br>
                             <li> <a href="/LMG_APUNTS/UT1/Elementos.html">Elementos HTML y Anidamientos</a></li><br>
                             <li> <a href="/LMG_APUNTS/UT1/Atributos.html">Atributos HTML</a></li><br>
@@ -112,8 +133,8 @@
                             <li> <a href="/LMG_APUNTS/UT1/Comentarios.html">Comentarios en HTML</a></li><br>
                             <li> <a href="/LMG_APUNTS/UT1/Imagenes.html">Inserción de imagenes</a></li><br>
                             <li> <a href="/LMG_APUNTS/UT1/Enlaces.html">Enlaces</a></li><br>
-                            <li> <a href="#1">Listas</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Tablas.html">Tablas</a></li>
+                            <li> <a href="/LMG_APUNTS/UT1/Listas.html">Listas</a></li><br>
+                            <li> <a href="#1">Tablas</a></li>
                         </ol>
                     </td>
                 </tr>
