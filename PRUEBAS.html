@@ -1,6 +1,31 @@
-<a href="https://www.google.com">Cerca a Google</a>
-
-<a href="#capitol1">Anar al Capítol 1</a>
-<h2 id="capitol1">Capítol 1</h2>
-
-<a href="https://www.exemple.com" target="_blank">Obre en una nova pestanya</a>
+<form action="submit.php" method="POST">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required><br><br>
+    <label for="password">Contrasenya:</label>
+    <input type="password" id="password" name="password" placeholder="Escriu la teva contrasenya" required><br><br>
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email" placeholder="Escriu el teu correu electrònic" required><br><br>
+    <label for="web">Lloc web:</label>
+    <input type="url" id="web" name="web" placeholder="Escriu l'URL del teu lloc web"><br><br>
+    <label for="telefon">Telèfon:</label>
+    <input type="tel" id="telefon" name="telefon" placeholder="Escriu el teu número de telèfon"><br><br>
+    <label for="edat">Edat:</label>
+    <input type="number" id="edat" name="edat" min="0" max="100" step="1" placeholder="Escriu la teva edat"><br><br>
+    <label for="satisfaccio">Nivell de satisfacció:</label>
+    <input type="range" id="satisfaccio" name="satisfaccio" min="1" max="10" step="1"><br><br>
+    <label for="naixement">Data de naixement:</label>
+    <input type="date" id="naixement" name="data-naixement"><br><br>
+    <label for="hora-reunio">Hora de la reunió:</label>
+    <input type="time" id="hora-reunio" name="hora-reunio"><br><br>
+    <label for="data-reunio">Data i hora de la reunió:</label>
+    <input type="datetime-local" id="data-reunio" name="data-reunio"><br><br>
+    <label for="mes">Mes preferit:</label>
+    <input type="month" id="mes" name="mes-preferit"><br><br>
+    <label for="setmana">Setmana de l'any:</label>
+    <input type="week" id="setmana" name="setmana-seleccionada"><br><br>
+    <label for="color">Color preferit:</label>
+    <input type="color" id="color" name="color-preferit"><br><br>
+    <label for="arxiu">Carrega un fitxer:</label>
+    <input type="file" id="arxiu" name="document"><br><br>
+    <button type="submit">Enviar</button>
+    </form>
