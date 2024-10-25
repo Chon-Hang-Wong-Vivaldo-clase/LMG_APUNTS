@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chon Hang Wong Vivaldo">
+    <title>Chon Hang Wong Vivaldo</title>
+</head>
+
+<body style="background-color: grey">
+    <h1> <a id="1">
+            <center> Apuntes lenguaje de marcas</center>
+        </a></h1>
+    <table border="10" align="top" width="100%">
+        <tr>
+            <th>
+                <h3>INDICE DE CONTENIDOS</h3>
+            </th>
+            <div class="contenidos">
+                <td colspan="10" rowspan="4" valign="top" width="80%">
+                    <h2>Etiquetas básicas</h2>
+                    <b>Etiqueta &lt;center&gt;</b><br>
+                    <p>Se utilizaba en verisones antiguas de HTML para centrar el contenido dentro de una página web,
+                        tanto texto como imagenes y otros elementos.</p>
+                    <p>Está obsoleta en HTML5, y se debería evitar su uso. En lugar del center, hoy en día se utiliza
+                        CSS para centrar elementos.</p><br>
+
+                    <center><b>Ejemplo &lt;center&gt;:</b></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+                    <center>
+                        <table>
+                            <tr>
+                                <td align="center">Ejemplo:</td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <img src="/img/code33.jpg" width="400" alt="Ejemplo"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><strong><u>Buenas prácticas</u></strong></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <table border="20">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Siempre utiliza el atributo alt para garantizar una buena
+                                                            accesibilidad y SEO.</li>
+                                                        <li>Evita insertar imagenes muy grandes sin reducir su medida,
+                                                            ya que
+                                                            eso puede afectar al rendimiento de la página.</li>
+                                                        <li>Si las imagenes son responsive, utiliza porcentaje en vez de
+                                                            píxeles
+                                                            por width y height.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </center><br>
+
+                    <b>Etiqueta &lt;div&gt;</b><br>
+                    <ul>
+                        <li>La etiqueta se utiliza para crear contenedores de bloques en una página HTML. Es una nueva
+                            etiqueta de nivel bloque, <br>
+                            lo que significa que ocupa todo el ancho disponible y comienza una línea nueva.</li>
+                        <li> No tiene significado semántico en si misma; simplemente agrupa otros elementos, como texto,
+                            imágenes u otras etiquetas y suele ser estilizada con CSS</li>
+                        <li>Es útil para organizar y diseñar diferentes secciones de una página web.</li>
+                    </ul>
+                    <center><b>Ejemplo &lt;div&gt;:</b></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+                    <center>
+                        <table>
+                            <tr>
+                                <td align="center">Ejemplo:</td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <img src="/img/code34.jpg" width="400" alt="Ejemplo"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><strong><u>Buenas prácticas</u></strong></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <table border="20">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Uno de los errores más comunes es el uso excesivo de divs
+                                                            para cualquier cosa,
+                                                            cuando existen etiquetas semánticas <br>más adequadas como
+                                                            &lt;header&gt;, &lt;section&gt;,
+                                                            &lt;article&gt;, etc..</li>
+                                                        <li>Utiliza el div para agrupar elementos que forman una unidad
+                                                            lógica o visual dentro de la página.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </center><br>
+                    <b>Etiqueta &lt;span&gt;</b><br>
+                    <ul>
+                        <li>Es una etiqueta inline (en línea) que sirve para estilizar o manipular
+                            pequeñas porciones de
+                            texto o contenido dentro de una página, este ocupa únicamente el espacio
+                            necesario.</li>
+                        <li>También es una etiqueta no semántica, usada principalmente para aplicar
+                            estilos o funcionalidades
+                            a un grupo específico de elementos de un texto.</li>
+                    </ul>
+                    <center><b>Ejemplo &lt;span&gt;:</b></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+
+                    <center>
+                        <table>
+                            <tr>
+                                <td align="center">Ejemplo:</td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <img src="/img/code35.jpg" width="400" alt="Ejemplo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><strong><u>Buenas prácticas</u></strong></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <table border="20">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Uso adecuado de &lt;span&gt; para estilizar
+                                                            texto en línea</li>
+                                                        <li>Evitar el uso excesivo del elemento.</li>
+                                                        <li>Combinarlo con CSS para mantener el código
+                                                            limpio.</li>
+                                                        <li>Únicamente para elementos en línea.</li>
+                                                        <li>Evitar abusar del elemento para crear
+                                                            contenedores sin necesidad.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <b>Etiqueta &lt;hr&gt;</b><br>
+                    <p>En HTML5, el uso de la etiqueta no es únicamente decorativo,
+                        tiene un valor semántico, para indicar un cambio de tema o una
+                        ruptura del flujo del doc.</p>
+                    <center><b>Ejemplo &lt;span&gt;:</b></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+                    <center>
+                        <table>
+                            <tr>
+                                <td align="center">Ejemplo:</td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <img src="/img/code36.jpg" width="400" alt="Ejemplo"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><strong><u>Buenas prácticas</u></strong>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <table border="20">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Uso adecuado de &lt;span&gt;
+                                                            para estilizar texto en
+                                                            línea</li>
+                                                        <li>Evitar el uso excesivo del
+                                                            elemento.</li>
+                                                        <li>Combinarlo con CSS para
+                                                            mantener el código limpio.
+                                                        </li>
+                                                        <li>Únicamente para elementos en
+                                                            línea.</li>
+                                                        <li>Evitar abusar del elemento
+                                                            para crear contenedores sin
+                                                            necesidad.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </center><br>
+                    <b>Etiqueta &lt;template&gt;</b><br>
+                    <p>La etiqueta se utiliza para definir fragmentos de HTML reutilizables que no se muestran inmediatamente cuando la<br>
+                        página se carga. El contenido dentro de uno no se añade al documento hasta que se manipula explícitamente con<br>
+                        JavaScript, cosa que permite crear plantillas que se pueden clonar e insertar al DOMO de manera dinámica.</p>
+                    <center><b>Ejemplo &lt;template&gt;:</b></center>
+                    <!-- Cambiar el center una vez aprendamos CSS-->
+                    <center>
+                        <table>
+                            <tr>
+                                <td align="center">Ejemplo:</td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <img src="/img/code37.jpg" width="400" alt="Ejemplo"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><strong><u>Buenas prácticas</u></strong>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <table border="20">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Mantén las plantillas simples y modulares: Organiza tu código dentro de
+                                                            la etiqueta de forma que puedas reutilizar fácilmente estas plantillas en
+                                                            diferentes secciones de la página.
+                                                        </li>
+                                                        <li>Clona plantillas con JavaScript: La etiqueta no renderiza su contenido hasta que
+                                                            lo invocas con JavaScript, lo cual te da control total sobre cuando y
+                                                            como se tiene que añadir al DOMO.
+                                                        </li>
+                                                        <li>Utiliza plantillas para generar contenido dinámicamente: Es muy útil en
+                                                            aplicaciones donde el contenido tiene que ser generado o actualizado en tiempo real, como
+                                                            listas, formularios o tarjetas de productos.
+                                                        </li>
+                                                        <li>No incluyas contenido activo dentro del template: Los scripts u otros contenidos
+                                                            interactivos dentro del template no se ejecutarán hasta que el contenido sea añadido al
+                                                        </li>
+                                                        <li>DOMO, así que asegúrate de añadir los elementos interactivos una vez esté al
+                                                            documento.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </center><br>
+                    </center>
+                </td>
+            </div>
+        </tr>
+        <div class="indice">
+            <nav>
+                <tr>
+                    <td>
+                        <center><a href="/LMG_APUNTS/index.html">INICIO</a></center>
+                    </td>
+                </tr>
+                <tr colspan="2" align="left">
+                    <td>
+                        <a href="/LMG_APUNTS/UT1/UT1.html">UT1 HTML BÁSICO</a><br>
+                        <ol type="1">
+                            <li> <a href="/LMG_APUNTS/UT1/UT1.html">Introducción a HTML</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Estructura.html"> Estructura básica de un documento HTML</a>
+                            </li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Etiquetas.html">Etiquetas básicas</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Elementos.html">Elementos HTML y Anidamientos</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Atributos.html">Atributos HTML</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Formato.html">Formato de textos</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Comentarios.html">Comentarios en HTML</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Imagenes.html">Inserción de imagenes</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Enlaces.html">Enlaces</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Listas.html">Listas</a></li><br>
+                            <li> <a href="/LMG_APUNTS/UT1/Tablas.html">Tablas</a></li>
+                        </ol>
+                    </td>
+                </tr>
+            </nav>
+            <nav>
+                <tr align="left">
+                    <td>
+                        <a href="/LMG_APUNTS/UT2/UT2.html">UT2 HTML AVANZADO</a><br>
+                        <ol type="1">
+                            <li><a href="/LMG_APUNTS/UT2/UT2.html">HTML5 y su evolución</a></li><br>
+                            <li><a href="/LMG_APUNTS/UT2/Formulario.html">Formularios con HTML</a></li><br>
+                            <li><a href="/LMG_APUNTS/UT2/Validacion.html">Validación de formularios</a></li><br>
+                            <li><a href="/LMG_APUNTS/UT2/Entrada.html">Tipos de entrada especiales</a></li><br>
+                            <li><a href="/LMG_APUNTS/UT2/Multimedia.html">Mulitmedia con HTML</a></li><br>
+                            <li><a href="#1">Etiquetas</a></li><br>
+                            <li><a href="/LMG_APUNTS/UT2/Metadatos.html">Metadatos en HTML</a></li>
+                        </ol>
+                    </td>
+                </tr>
+            </nav>
+        </div>
+    </table>
+</body>
+
+</html>
