@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between 10pxc   ;
+}
+
+.nav-summary {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="checkbox"][id^="summary"] {
+  display: none;
+}
