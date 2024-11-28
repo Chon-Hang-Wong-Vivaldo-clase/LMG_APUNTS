@@ -1,6 +1,32 @@
+@font-face {
+  font-family: "Signika";
+  src: url("/fonts/Signika-VariableFont_GRAD\,wght.ttf");
+}
+
+header{
+  width: 100%;
+  background-color: #490079;
+  height: 60px;
+  position: fixed;
+}
+
+body{
+  font-family: "Signika";
+  margin: 0%;
+  padding: 0%;
+}
+
+body a{
+  font-family: "Signika";
+}
+
 header {
   display: flex;
-  justify-content: space-between 10pxc   ;
+  gap: 20px;
+}
+
+.logo-page-top {
+  margin-top: 20px;
 }
 
 .nav-summary {
@@ -8,6 +34,32 @@ header {
   justify-content: space-around;
 }
 
-input[type="checkbox"][id^="summary"] {
-  display: none;
+.button-summary {
+  background-color: #490079;
+  color: black;
+  border: none;
+  margin: 5px;
+  margin-top: 10px;
 }
+
+.summary{
+  display: none;
+  position: absolute;
+  background-color: #5c128b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.summary a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.summary a:hover {background-color: #5c128b;}
+
+.button-summary:hover .summary {display: block;}
+
+.button-summary:hover .button-summary {background-color: #5c128b;}
