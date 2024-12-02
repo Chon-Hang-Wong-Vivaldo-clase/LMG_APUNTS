@@ -1,65 +1,169 @@
+/* Fuentes */
 @font-face {
   font-family: "Signika";
-  src: url("/fonts/Signika-VariableFont_GRAD\,wght.ttf");
+  src: url("/fonts/Signika-VariableFont_GRAD,wght.ttf");
 }
 
-header{
-  width: 100%;
-  background-color: #490079;
+/* Reset y Estilos Globales */
+body {
+  font-family: "Signika", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estructura del Grid Principal */
+body {
+  display: grid;
+  grid-template-areas:
+    "nav-top nav-top"
+    "aside-nav main-content"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+/* Barra de navegación superior */
+.nav-top {
+  grid-area: nav-top;
+  background-color: #19191c;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
   height: 60px;
   position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
-body{
-  font-family: "Signika";
-  margin: 0%;
-  padding: 0%;
-}
-
-body a{
-  font-family: "Signika";
-}
-
-header {
-  display: flex;
-  gap: 20px;
-}
-
-.logo-page-top {
-  margin-top: 20px;
+.logo-page-top img {
+  height: 40px;
 }
 
 .nav-summary {
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
 }
 
 .button-summary {
-  background-color: #490079;
-  color: black;
+  background-color: #19191c;
+  color: #FFFFFFB2;
   border: none;
-  margin: 5px;
-  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;
 }
 
-.summary{
+.button-summary:hover {
+  color: #FFFFFF;
+}
+
+.button-summary a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.summary {
   display: none;
   position: absolute;
-  background-color: #5c128b;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  top: 100%;
+  left: 0;
+  background-color: #19191c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .summary a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+  display: block;
+  color: #FFFFFFB2;
+  padding: 10px 15px;
+}
+
+.summary a:hover {
+  color: #FFFFFF;
+  background-color: #444;
+}
+
+.button-summary:hover .summary {
   display: block;
 }
 
-.summary a:hover {background-color: #5c128b;}
+/* Menú lateral */
+.nav-aside {
+  grid-area: aside-nav;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: auto; /* Permite el scroll vertical */
+  height: calc(100vh - 60px); /* Ajusta la altura para que no se solape con el header */
+  position: fixed; /* Fija el aside en su lugar */
+  top: 60px; /* Desplazado debajo del header fijo */
+  width: 220px; /* Ancho fijo */
+}
 
-.button-summary:hover .summary {display: block;}
+.nav-aside ul {
+  list-style: none;
+  padding: 0;
+}
 
-.button-summary:hover .button-summary {background-color: #5c128b;}
+.nav-aside li {
+  margin-bottom: 10px;
+}
+
+.nav-aside li a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-aside li a:hover {
+  background-color: #19191c;
+  color: #fff;
+}
+
+/* Contenido principal */
+.main-content {
+  grid-area: main-content;
+  padding: 20px;
+  background-color: #eaeaea;
+  overflow-y: auto;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  background-color: #19191c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "nav-top"
+      "main-content"
+      "aside-nav"
+      "footer";
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-aside {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-top {
+    position: static;
+  }
+}
