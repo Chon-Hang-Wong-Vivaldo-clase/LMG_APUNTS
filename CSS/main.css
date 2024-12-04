@@ -53,7 +53,7 @@ body {
 
 .button-summary {
   background-color: #19191c;
-  color: #FFFFFFB2;
+  color: #ffffffb2;
   border: none;
   cursor: pointer;
   padding: 10px 15px;
@@ -61,7 +61,7 @@ body {
 }
 
 .button-summary:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .button-summary a {
@@ -80,12 +80,12 @@ body {
 
 .summary a {
   display: block;
-  color: #FFFFFFB2;
+  color: #ffffffb2;
   padding: 10px 15px;
 }
 
 .summary a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #444;
 }
 
@@ -100,7 +100,9 @@ body {
   padding: 20px;
   padding-bottom: 50px;
   overflow-y: auto; /* Permite el scroll vertical */
-  height: calc(100vh - 60px - 50px); /* Ajusta la altura para que no se solape con el header */
+  height: calc(
+    100vh - 60px - 50px
+  ); /* Ajusta la altura para que no se solape con el header */
   position: fixed; /* Fija el aside en su lugar */
   top: 60px; /* Desplazado debajo del header fijo */
   width: 220px; /* Ancho fijo */
@@ -172,4 +174,16 @@ body {
   .nav-top {
     position: static;
   }
+}
+
+.example-title {
+  text-align: center;
+}
+.example {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  border: #333;
+  border-radius: 50px;
+  gap: 30px;
 }
