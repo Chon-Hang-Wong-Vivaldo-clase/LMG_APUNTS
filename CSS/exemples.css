@@ -1,0 +1,48 @@
+.images-exemples{
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-exemples .first-exemple{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(/img/GoogleFonts.png);
+    background-repeat: no-repeat;
+    transition: width 1s;
+}
+
+.images-exemples .second-exemple{
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+    background-image: url(/img/Dafont.png);
+    background-repeat: no-repeat;
+    transition: width 1s;
+}
+
+.images-exemples .third-exemple{
+    margin-top: 10px;
+    width: 165px;
+    height: 200px;
+    background-image: url(/img/myfonts.png);
+    background-repeat: no-repeat;
+    transition: width 1s;
+}
+
+.images-exemples .first-exemple:hover{
+    width: 210px;
+}
+.images-exemples .second-exemple:hover{
+    width: 270px;
+}
+.images-exemples .third-exemple:hover{
+    width: 175px;
+}
+
+@media (max-width: 1200px){
+    .images-exemples{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

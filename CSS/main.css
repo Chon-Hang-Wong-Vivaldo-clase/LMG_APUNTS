@@ -4,11 +4,23 @@
   src: url("/fonts/Signika-VariableFont_GRAD,wght.ttf");
 }
 
+pre {
+  height: auto;
+  background: black;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+code {
+  color: #eaeaea;
+  padding: 10px;
+  display: block;
+}
+
 /* Reset y Estilos Globales */
 body {
   font-family: "Signika", sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 body a {
