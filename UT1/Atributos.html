@@ -4,91 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Chon Hang Wong Vivaldo">
-    <title>Chon Hang Wong Vivaldo</title>
+    <title>UT1 - Atributos</title>
+    <link rel="stylesheet" href="/CSS/main.css">
 </head>
 
-<body style="background-color: grey">
-    <h1> <a id="1">
-            <center> Apuntes lenguaje de marcas</center>
-        </a></h1>
-    <table border="10" align="top" width="100%">
-        <tr>
-            <th>
-                <h3>INDICE DE CONTENIDOS</h3>
-            </th>
-                <div class="contenidos">
-                    <td colspan="10" rowspan="4" valign="top" width="80%">
-                        <h2> Atributos </h2>
-                        Los atributos en HTML son elementos que añaden información extra a las etiquetas HTML para
-                        modificar
-                        el
-                        comportamiento o la apariencia. Estos atributos siempre se colocan dentro de la etiqueta de
-                        apertura
-                        y
-                        siguen el formado nombre="valor".
-                        <center><b>Ejemplo de estructura:</b></center><br>
-                        <!-- Cambiar el center una vez aprendamos CSS-->
-                        <center>
-                            <table>
-                                <tr>
-                                    <td>Ejemplo:</td>
-                                    <td>Resultado:</td>
-                                </tr>
-                                <tr>
-                                    <td> <img src="/LMG_APUNTS/img/code6.jpg" width="650"></td>
-                                    <td> <img src="/LMG_APUNTS/img/resultado3.png" width="320"></td>
-                                </tr>
-                            </table>
-                        </center>
-                    </td>
-                </div>
-        </tr>
-        <div class="indice">
-            <nav>
-                <tr>
-                    <td>
-                        <center><a href="/LMG_APUNTS/index.html">INICIO</a></center>
-                    </td>
-                </tr>
-                <tr colspan="2" align="left">
-                    <td>
-                        <a href="/LMG_APUNTS/UT1/UT1.html">UT1 HTML BÁSICO</a><br>
-                        <ol type="1">
-                            <li> <a href="/LMG_APUNTS/UT1/UT1.html">Introducción a HTML</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Estructura.html"> Estructura básica de un documento HTML</a>
-                            </li>
-                            <br>
-                            <li> <a href="/LMG_APUNTS/UT1/Etiquetas.html">Etiquetas básicas</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Elementos.html">Elementos HTML y Anidamientos</a></li><br>
-                            <li> <a href="#1">Atributos HTML</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Formato.html">Formato de textos</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Comentarios.html">Comentarios en HTML</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Imagenes.html">Inserción de imagenes</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Enlaces.html">Enlaces</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Listas.html">Listas</a></li><br>
-                            <li> <a href="/LMG_APUNTS/UT1/Tablas.html">Tablas</a></li>
-                        </ol>
-                    </td>
-                </tr>
-            </nav>
-            <nav>
-                <tr align="left">
-                    <td>
-                        <a href="/LMG_APUNTS/UT2/UT2.html">UT2 HTML AVANZADO</a><br>
-                        <ol type="1">
-                            <li><a href="/LMG_APUNTS/UT2/UT2.html">HTML5 y su evolución</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Formulario.html">Formularios con HTML</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Validacion.html">Validación de formularios</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Entrada.html">Tipos de entrada especiales</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Multimedia.html">Mulitmedia con HTML</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Etiquetas.html">Etiquetas</a></li><br>
-                            <li><a href="/LMG_APUNTS/UT2/Metadatos.html">Metadatos en HTML</a></li>
-                        </ol>
-                    </td>
-                </tr>
-            </nav>
+<body>
+    <header class="nav-top">
+        <div class="logo-page-top">
+            <img src="" alt="Logo página de apuntes">
         </div>
-    </table>
+        
+        <div class="nav-summary">
+            <div class="button-summary">
+                <button class="button-summary"><a href="/LMG_APUNTS/UT2/UT2.html">HTML Avanzado</a></button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT2/Formulario.html">Formularios</a>
+                    <a href="/LMG_APUNTS/UT2/Validacion.html">Validación de formularios</a>
+                    <a href="/LMG_APUNTS/UT2/Entrada.html">Tipos de entrada especiales</a>
+                    <a href="/LMG_APUNTS/UT2/Multimedia.html">Multimedia con HTML</a>
+                    <a href="/LMG_APUNTS/UT2/Etiquetas.html">Etiquetas</a>
+                    <a href="/LMG_APUNTS/UT2/Metadatos.html">Metadatos en HTML</a>
+                </div>
+            </div>
+
+            <div class="button-summary">
+                <button class="button-summary"><a href="/LMG_APUNTS/UT3/UT3.html">CSS Básico</a></button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT3/UT3.html">Introducción al CSS</a>
+                    <a href="/LMG_APUNTS/UT3/Estilos.html">Aplicación de estilos</a>
+                    <a href="/LMG_APUNTS/UT3/SintaxisBasicaCss.html">Sintaxis básica</a>
+                    <a href="/LMG_APUNTS/UT3/PropiedadesTextoFuentes.html">Propiedades texto y fuentes</a>
+                    <a href="/LMG_APUNTS/UT3/Margenes.html">Margenes, rellenos y bordes</a>
+                    <a href="/LMG_APUNTS/UT3/Colores.html">Colores y fuentes</a>
+                    <a href="/LMG_APUNTS/UT3/Dimensiones.html">Dimensiones y cajas</a>
+                    <a href="/LMG_APUNTS/UT3/Posicionamiento.html">Posicionamiento básico</a>
+                    <a href="/LMG_APUNTS/UT3/DiseñoFlexbox.html">Diseño con Flexbox</a>
+                    <a href="/LMG_APUNTS/UT3/MediaQueries.html">Media Queries</a>
+                </div>
+            </div>
+
+            <div class="button-summary">
+                <button class="button-summary">
+                    <a href="/LMG_APUNTS/UT4/UT4.html">CSS Avanzado</a>
+                </button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT4/UT4.html">Introducción CSS avanzado</a>
+                    <a href="/LMG_APUNTS/UT4/Selectores.HTML">Selectores avanzados</a>
+                    <a href="/LMG_APUNTS/UT4/FuentesTipografia.html">Propiedades avanzadas de fuentes</a>
+                    <a href="/LMG_APUNTS/UT4/LayoutsFlexboxGrid.html">Layouts avanzados con Flexbox y Grid</a>
+                    <a href="/LMG_APUNTS/UT4/Popover.html">Popover API</a>
+                    <a href="/LMG_APUNTS/UT4/VariablesCSS.html">Variables CSS</a>
+                    <a href="/LMG_APUNTS/UT4/Animaciones.html">Animaciones y transiciones</a>
+                    <a href="/LMG_APUNTS/UT4/">Diseño atractivo y coherente</a>
+                    <a href="/LMG_APUNTS/UT4/">UI/UX</a>
+                    <a href="/LMG_APUNTS/UT4/">Optimización y rendimiento</a>
+                    <a href="/LMG_APUNTS/UT4/">Herramientas modernas de CSS</a>
+                </div>
+            </div>
+
+            <div class="button-summary">
+                <button class="button-summary"><a href="/LMG_APUNTS/UT5/UT5.html">JavaScript</a></button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT5/">Selectores avanzados</a>
+                    <a href="/LMG_APUNTS/UT5/">Propiedades avanzadas de fuentes</a>
+                    <a href="/LMG_APUNTS/UT5/">Layouts avanzados con Flexbox y Grid</a>
+                    <a href="/LMG_APUNTS/UT5/">Popover API</a>
+                    <a href="/LMG_APUNTS/UT5/">Variables CSS</a>
+                    <a href="/LMG_APUNTS/UT5/">Animaciones y transiciones</a>
+                    <a href="/LMG_APUNTS/UT5/">Diseño atractivo y coherente</a>
+                    <a href="/LMG_APUNTS/UT5/">UI/UX</a>
+                    <a href="/LMG_APUNTS/UT5/">Optimización y rendimiento</a>
+                    <a href="/LMG_APUNTS/UT5/">Herramientas modernas de CSS</a>
+                </div>
+            </div>
+
+            <div class="button-summary">
+                <button class="button-summary"><a href="/LMG_APUNTS/UT6/UT6.html">JSON</a></button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT6/">Selectores avanzados</a>
+                    <a href="/LMG_APUNTS/UT6/">Propiedades avanzadas de fuentes</a>
+                    <a href="/LMG_APUNTS/UT6/">Layouts avanzados con Flexbox y Grid</a>
+                    <a href="/LMG_APUNTS/UT6/">Popover API</a>
+                    <a href="/LMG_APUNTS/UT6/">Variables CSS</a>
+                    <a href="/LMG_APUNTS/UT6/">Animaciones y transiciones</a>
+                    <a href="/LMG_APUNTS/UT6/">Diseño atractivo y coherente</a>
+                    <a href="/LMG_APUNTS/UT6/">UI/UX</a>
+                    <a href="/LMG_APUNTS/UT6/">Optimización y rendimiento</a>
+                    <a href="/LMG_APUNTS/UT6/">Herramientas modernas de CSS</a>
+                </div>
+            </div>
+
+            <div class="button-summary">
+                <button class="button-summary"><a href="/LMG_APUNTS/UT7/UT7.html">XML</a></button>
+                <div class="summary">
+                    <a href="/LMG_APUNTS/UT7/">Selectores avanzados</a>
+                    <a href="/LMG_APUNTS/UT7/">Propiedades avanzadas de fuentes</a>
+                    <a href="/LMG_APUNTS/UT7/">Layouts avanzados con Flexbox y Grid</a>
+                    <a href="/LMG_APUNTS/UT7/">Popover API</a>
+                    <a href="/LMG_APUNTS/UT7/">Variables CSS</a>
+                    <a href="/LMG_APUNTS/UT7/">Animaciones y transiciones</a>
+                    <a href="/LMG_APUNTS/UT7/">Diseño atractivo y coherente</a>
+                    <a href="/LMG_APUNTS/UT7/">UI/UX</a>
+                    <a href="/LMG_APUNTS/UT7/">Optimización y rendimiento</a>
+                    <a href="/LMG_APUNTS/UT7/">Herramientas modernas de CSS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <aside class="nav-aside">
+        <ul>
+            <li><a href="/LMG_APUNTS/UT1/UT1.html">Introducción al HTML</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Estructura.html">Estructura básica</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Etiquetas.html">Etiquetas básica</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Elementos.html">Elementos HTML y anidamientos</a></li>
+            <li><a href="#1">Atributos HTML</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Formato.html">Formato de textos</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Comentarios.html">Comentarios en HTML</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Imagenes.html">Inserción de imagenes</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Enlaces.html">Enlaces</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Listas.html">Listas</a></li>
+            <li><a href="/LMG_APUNTS/UT1/Tablas.html">Tablas</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <h1 id="1">HTML básico - 5. Atributos HTML:</h1>
+        <p>Los atributos en HTML son elementos que añaden información extra a las etiquetas HTML para
+            modificar el comportamiento o la apariencia. Estos atributos siempre se colocan dentro de la etiqueta de
+            apertura y siguen el formado nombre="valor".
+        </p>
+        <b>Ejemplo:</b>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hellow world&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 id=&quot;titol&quot; &gt;Titol 1&lt;/h1&gt;
+    &lt;h2 class=&quot;important&quot; &gt;Titol 2&lt;/h2&gt;
+    &lt;h3 style=&quot;color: blue; text-align: center;&quot; &gt;Titol 3&lt;/h3&gt;
+    &lt;h4 title=&quot;Informació addicional&quot; &gt;Titol 4&lt;/h4&gt;
+    &lt;img src=&quot;https://picsum.photos/300/300?random=1&quot; alt=&quot;Descripció de la imatge&quot; &gt;
+    &lt;a href=&quot;https://www.exemple.com&quot;&gt;Enllaç&lt;/a&gt;
+    &lt;p&gt;Aquest és un paràgraf amb informació.&lt;/p&gt;
+    &lt;p&gt;Aquest text es dividirà&lt;br&gt;en dues línies.&lt;/p&gt;
+    &lt;p&gt;Aquesta és la frase &quot;12&amp;nbsp;homes&quot;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        
+                    </code>
+                </pre>
+    </main>
+    
 </body>
 
 </html>
